@@ -12,7 +12,6 @@ function generateJoke() {
     .then((resp) => resp.json())
     .then((data) => {
       let rand = Math.floor(Math.random() * data.length);
-      let item = data[rand];
       category.innerHTML = `${data[rand].type} Joke`;
       joke.innerHTML = data[rand].setup;
       punchline.innerHTML = ` <span class ="emoji">🤣</span>&nbsp; <b>“</b> ${data[rand].punchline} <b>”</b>`;
