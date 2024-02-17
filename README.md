@@ -2,7 +2,22 @@
 
 This simple **Random Joke Generator** app is built using `HTML`, `Sass`, and `JavaScript`
 
-## Table of Content
+### Table of Contents
+
+1. [Link](#link)
+2. [Screenshots](#screeshots)
+   - [Desktop](#desktop)
+   - [Mobile](##mobile)
+
+#### Link
+
+[Random Joke Generator](https://jfcode101.github.io/Random-Joke-Generator/)
+
+#### Screenshots
+
+[Desktop](./assets/images/desktop.png)
+
+[Mobile](./assets/images/mobile.png)
 
 | Resource Title    | Resource Links                                                                         |
 | ----------------- | -------------------------------------------------------------------------------------- |
