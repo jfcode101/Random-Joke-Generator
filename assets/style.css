@@ -13,15 +13,14 @@ html {
 }
 
 body {
-  min-height: 100vh;
-  background-color: #432616;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  min-height: 100vh;
+  background-color: #432616;
 }
-
 body .header {
   width: 90%;
   margin: 0 auto;
@@ -69,12 +68,15 @@ body .wrapper .sect-text {
 body .wrapper .sect-text p {
   width: 90%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 150px;
   text-align: center;
   padding: 1rem;
   border-radius: 5px;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.4;
 }
@@ -115,9 +117,9 @@ body .btn-submit:focus {
   box-shadow: 0 4px 8px #fff, -4px 0 8px #f9ebcd;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
   .wrapper {
-    max-width: 1000px;
+    width: 1000px;
   }
   .wrapper .sect-text {
     width: 90%;
@@ -127,6 +129,4 @@ body .btn-submit:focus {
     height: 150px;
     line-height: 1.4;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
