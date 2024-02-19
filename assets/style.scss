@@ -43,6 +43,16 @@ html {
   justify-content: center;
 }
 
+@mixin btnAction($btnAction: button) {
+  color: $color-6;
+  background: $color-1;
+  border: 2px solid $color-1;
+}
+
+@mixin padOne($padOne: padding) {
+  padding: 1rem;
+}
+
 body {
   @include flexColCenter2;
   min-height: 100vh;
@@ -71,7 +81,7 @@ body {
     @include bodyKids;
     @include flexColCenter2;
     min-height: 375px;
-    padding: 1rem;
+    @include padOne;
 
     .sect-header {
       width: 100%;
@@ -80,7 +90,7 @@ body {
           align: center;
           transform: Capitalize;
         }
-        color: $color-5;
+        color: $color-3;
         font: {
           size: 1.75rem;
           weight: 500;
@@ -99,7 +109,7 @@ body {
         text: {
           align: center;
         }
-        padding: 1rem;
+        @include padOne;
         border-radius: 5px;
 
         font: {
@@ -127,7 +137,7 @@ body {
     font-family: cursive;
     outline: none;
     border: none;
-    padding: 1rem;
+    @include padOne;
     color: $color-4;
     background: inherit;
     border: 2px solid $color-5;
@@ -141,15 +151,11 @@ body {
       boxshadow 500ms ease-out, border 500ms ease;
   }
   .btn-submit:hover {
-    color: $color-6;
-    background: $color-1;
-    border: 2px solid $color-1;
+    @include btnAction;
     box-shadow: 0 8px 16px $color-5, -8px 0 16px $color-6;
   }
   .btn-submit:focus {
-    color: $color-6;
-    background: $color-1;
-    border: 2px solid $color-1;
+    @include btnAction;
     box-shadow: 0 4px 8px $color-6, -4px 0 8px $color-5;
   }
 }
